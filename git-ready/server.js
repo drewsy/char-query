@@ -6,6 +6,7 @@ const request = require("request");
 const servPort = 80;
 const k = '';
 
+//remove for ssl, localhost configuration solves self_signed_cert error
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
 var repId = [2159,2160,2161,2162,2163,2164];
