@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Character Query - v0.2</title>
+  </head>
+  <body>
+      <form action="http://localhost:80/query" method="GET">
+            <input type="text" name="char" placeholder="Character Name" style="width:10%"> <br><br>
+            <input list="realms" name="real"  placeholder="Choose Server" style="width:10%">
+              <datalist id="realms">
+              <option value="Gilneas">Gilneas</option>
+              <option value="Elune">Elune</option>
+          </datalist>
+            <br><br><input type="submit" value="submit">        
+      </form>
+  </body>
+</html>
