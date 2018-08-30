@@ -44,7 +44,7 @@ app.get('/query', async function outp(req, res){
 
     for ( t in query.titles ){
   
-        if ( query.titles[t].selected == true){
+        if ( query.titles[t].selected == true ){
           var title = query.titles[t].name.replace("%s","");
         } else { var title = ""; }
     }
@@ -65,7 +65,7 @@ app.get('/query', async function outp(req, res){
     }
 
     returnObjects.splice(0,2);
-        for ( var s in returnObjects){
+        for ( var s in returnObjects ){
             var plURL = '<a href="' + returnObjects[s][1] + '" target="_new">' + returnObjects[s][2] + '</a>';
             var slot  = returnObjects[s][0];
             var lvl   = returnObjects[s][3];
